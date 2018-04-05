@@ -4,7 +4,9 @@ const port = process.env.PORT || 3000
 const moment = require('moment')
 const shortid = require('shortid')
 
-app.use(require('morgan')('dev'))
+const environment = process.env.NODE_ENV
+const mode = environment === 'production' ? 'tiny' : 'dev'
+app.use(require('morgan')(mode))
 app.use(require('body-parser').json())
 
 const dreams = [
