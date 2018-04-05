@@ -6,7 +6,7 @@ Example API. Convert to a RESTful architecture.
 
 1. Fork/clone this repository
 1. `npm install`
-1. `npm start`
+1. `npm run dev`
 
 ## Guiding Questions
 
